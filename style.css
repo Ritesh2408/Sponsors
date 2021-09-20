@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,html {
+  font-family: 'Roboto', sans-serif;
+  background: url('images/sponsor.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.card {
+  display: inline-block;
+  margin: 65px;
+  width: 200px;
+  height: 300px;
+  /*   box-shadow: 0 5px 64px 17px rgba(183, 189, 194, 1); */
+}
+
+.card:hover {
+  /*   box-shadow: 0 5px 64px 17px rgba(149, 154, 158, 1); */
+}
+
+.card-head {
+  overflow: hidden;
+  width: 225px;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 2px 2px 0 0;
+  transition: all .2s ease-in-out;
+}
+
+.header3 {
+  transition: all .2s ease-in-out;
+}
+
+.card-head {
+  width: 225px;
+  height: 200px;
+}
+
+.card:hover .card-img {
+  transform: scale(1.05);
+}
+
+.card-body {
+  background: #fff;
+  width: 225px;
+  height: 100px;
+  border-bottom: 10px solid #046380;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.card-body .header3 {
+  line-height: 90px;
+  color: #046380;
+}
+
+.card:hover .header3 {
+  color: #1aaead;
+  transform: scale(1.1);
+}
+
+.header {
+
+  width: 100vw;
+  height: 70vh;
+  display: grid;
+  place-items: center;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.header-text {
+  font-family: 'Fredoka One', cursive;
+  font-size: 60px;
+  color: white;
+  margin: 40px;
+  position: relative;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 5px green;
+}
+.header-text1 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 60px;
+  color: white;
+  margin: 40px;
+  position: relative;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 5px green;
+}
+
+.header-text::before{
+  content: "SPONSORS";
+  color: #32CD32;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 0.4rem solid #32CD32;
+  animation: slide 3s linear infinite;
+  -webkit-animation:slide 3s linear infinite;
+  overflow: hidden;
+}
+@keyframes slide {
+ 0%{
+   width: 0%;
+ }
+ 50%{
+   width: 100%;
+ }
+ 100%{
+   width: 0%;
+ }
+
+}
+
+.header-text1::before{
+  content: "OUR";
+  color: #32CD32;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 0.4rem solid #32CD32;
+  animation: slide 3s linear infinite;
+  -webkit-animation:slide 3s linear infinite;
+  overflow: hidden;
+}
+@keyframes slide {
+ 0%{
+   width: 0%;
+ }
+ 50%{
+   width: 100%;
+ }
+ 100%{
+   width: 0%;
+ }
+
+}
+
+@media (max-width:400px) {
+  .header-text {
+    font-size: 40px;
+  }
+}
+.logo {
+  margin: 10px;
+  height: 10rem;
+  width: 7rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.back1 {
+  margin-top: 5px;
+  margin-left: 15px;
+  filter: opacity(100%);
+}
+
+.back1:hover {
+  box-shadow: 10px 8px 15px #F8F8FF;
+  transform: translateY(-0.25em);
+  filter: opacity(1);
+  border-radius: 50%;
+}
